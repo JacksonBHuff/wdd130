@@ -1,4 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Halant:wght@300;400;500;600;700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 /* Center Aligning Everything */
+
+.home-title {
+    margin-top: 10px;
+}
 
 div {
     max-width: 1600px;
@@ -9,6 +14,11 @@ nav a {
     text-align: center;
     color: #fbfcee;
     text-decoration: none;
+    padding: 35px;
+}
+
+#logo_link {
+    padding-top: 5px;
 }
 
 #hero-msg h1 {
@@ -34,10 +44,18 @@ main section {
 /* setting background colors and text colors */
 body {
     background-color: #fbfcee;
+    font-family: 'Halant', Arial, sans-serif;
+    font-size: 22px;
+    margin: 0;
+    padding: 0;
 } 
 
 header {
     background-color: #05668d;
+}
+
+h2 {
+    margin: 0;
 }
 
 nav a:hover {
@@ -45,16 +63,14 @@ nav a:hover {
     color: #fbfcee;
 }
 
-.book {
+.book, .join {
     background-color: #05668d;
     color: #fbfcee;
     text-decoration: none;
-}
-
-.join {
-    background-color: #05668d;
-    color: #fbfcee;
-    text-decoration: none;
+    font-size: 18px;
+    padding: 15px 30px;
+    margin-top: 50px;
+    border-radius: 5px;
 }
 
 .book:hover {
@@ -72,12 +88,20 @@ nav a:hover {
 }
 
 .msg {
-    background-color: #05668d;   
+    background-color: #05668d;
+    line-height: 1.5em;   
+    padding: 35px;
 }
 
 footer {
     background-color: #05668d;
     color: #fbfcee;
+    padding: 25px 50px;
+    margin-top: 200px;
+}
+
+footer .social img {
+    padding-top: 15px;
 }
 
 footer a {
@@ -99,6 +123,8 @@ footer p {
      
 .home-title {
     color: #05668d;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2em;
 }
 
 h4 {
@@ -111,6 +137,8 @@ h4 {
 
 .msg p {
     color: #fbfcee;
+    font-size: 0.8em;
+    padding-bottom: 15px;
 }
 
 /*Logo and Icon widths set*/
@@ -119,8 +147,20 @@ h4 {
 }
 .icon {
     width: 80px;
+    padding-top: 10px;
 }
 
 #hero-img {
     width: 100%
+}
+.rivers-card, .camping-card, .rapids-card {
+    margin: 200px 0;
+}
+
+.card-img {
+    border: 10px solid #05668d;
+}
+
+main section img {
+    box-sizing: border-box;
 }
