@@ -243,7 +243,102 @@ main section img {
     box-shadow: 5px 5px 10px #66747a;    
 }
 
-/*Reminder: Media queries always need to be after all the other CSS. Don't add any CSS after the media query later either.*/
+/* General styles for the rivers page */
+.rivers-grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.rivers-info {
+    text-align: center;
+    margin-bottom: 50px;
+    color: #05668d;
+}
+
+/* Styling for each river section */
+.river-card {
+    width: 100%;
+    margin-bottom: 60px;
+}
+
+.river-card h2 {
+    text-align: center;
+    font-size: 2em;
+    color: #05668d;
+    padding: 15px;
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+}
+
+/* River content styling with alternating layout */
+.river-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 30px;
+    background-color: #05668d;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+/* Salmon River: Image on the left, text on the right */
+.river-card.salmonriver .river-content img {
+    order: 1;
+}
+
+.river-card.salmonriver .river-content p {
+    order: 2;
+}
+
+/* Desolation Canyon: Text on the left, image on the right */
+.river-card.utahriver .river-content img {
+    order: 2;
+}
+
+.river-card.utahriver .river-content p {
+    order: 1;
+}
+
+/* Grand Canyon: Image on the left, text on the right */
+.river-card.grandcanyonriver .river-content img {
+    order: 1;
+}
+
+.river-card.grandcanyonriver .river-content p {
+    order: 2;
+}
+
+/* Styling for images and paragraphs */
+.river-content img {
+    width: 45%;
+    border-radius: 8px;
+    box-shadow: 5px 5px 10px #66747a;
+}
+
+.river-content p {
+    width: 50%;
+    font-size: 1em;
+    color: #fbfcee;
+    line-height: 1.6em;
+    font-family: "Halant", serif;
+}
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 900px) {
+    .river-content {
+        flex-direction: column;
+        text-align: center;
+    }
+    .river-content img, .river-content p {
+        width: 100%;
+    }
+}
+
 
 @media screen and (max-width: 900px) {
     #hero, .home-grid {
@@ -286,6 +381,13 @@ main section img {
     }
     footer {
         margin-top: 25px;
+    }
+    .river-card {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    .river-card img {
+        margin: 0 auto;
     }
 }
             
