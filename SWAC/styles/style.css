@@ -118,14 +118,6 @@ main .content p {
   margin: 0 125px;
 }
 
-#photo-one {
-  align-items: right;
-}
-
-#photo-two {
-  align-items: left;
-}
-    
 /* Footer */
 footer {
   display: flex;
@@ -144,6 +136,29 @@ footer a {
   color: #f4f0bb;
   text-decoration: underline;
   font-size: 0.9rem;
+}
+
+.subpage-main {
+  margin: 50px;
+  text-align: center;
+}
+
+.subpage-main h2 {
+  color: #226f54;
+}
+
+#subpage-photo-one {
+  float: left;
+  margin: 5px;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.subpage-content {
+  text-align: justify;
+  font-size: 25px;
 }
    
 /* Responsive Design */
